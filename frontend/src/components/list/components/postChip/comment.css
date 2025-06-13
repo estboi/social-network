@@ -1,0 +1,125 @@
+.post-comment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 5rem 1fr 4rem;
+    grid-template-areas: 'header header header'
+        'main main main'
+        'option option option'
+    ;
+
+    width: 100%;
+    border: 2px solid #005702;
+}
+
+.post-comment__header {
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    padding: 1rem;
+    gap: 1rem;
+    width: 100%;
+
+    background-color: #005702;
+}
+
+.post-comment__creator--wrapper {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.post-comment__creator--wrapper:hover {
+    text-decoration: underline solid #00ac03;
+}
+
+.post-comment__creator-avatar {
+    display: flex;
+    align-items: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.post-comment__creator-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.post-comment__creator-name {
+    font-size: 1.5em;
+    justify-self: flex-start;
+}
+
+.post-comment__time {
+    justify-self: flex-end;
+    align-self: flex-start;
+
+    font-size: 0.7em;
+    color: #00ac03;
+}
+
+.post-comment__main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.post-comment-main__content-text {
+    overflow: hidden;
+    width: 100%;
+
+    line-height: 1em;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    color: whitesmoke;
+}
+
+.post-comment-main__content-image {
+    display: flex;
+    align-items: center;
+
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.post-comment-main__content-image img {
+    height: auto;
+    max-height: 250px;
+    max-width: 125px;
+    min-width: 5rem;
+}
+
+.post-comment__options {
+    grid-area: option;
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    padding: 1rem;
+
+    border-top: 2px solid #005702;
+}
+
+.post-comment__vote {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    cursor: pointer;
+}
+
+.post-comment__vote-number {
+    color: whitesmoke;
+    font-size: 1.5em;
+}

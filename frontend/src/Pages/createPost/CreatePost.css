@@ -1,0 +1,133 @@
+.posts-create--page {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+}
+
+.post-create-fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+
+    height: 50%;
+
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.content-text-area {
+    background: none;
+    border: 2px solid var(--nested);
+
+    padding: 1rem;
+
+    color: whitesmoke;
+    overflow-y: hidden;
+    resize: none;
+}
+
+.content-text-area:focus {
+    outline: none;
+}
+
+.add-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    border: 2px solid var(--nested);
+    cursor: pointer;
+}
+
+.post-img {
+    height: auto;
+    width: 100%;
+    max-width: 20em;
+}
+
+.privacy {
+    display: flex;
+
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.change-privacy {
+    color: var(--highlight);
+}
+
+.privacy__button {
+    background: none;
+    border: 2px solid;
+
+    color: whitesmoke;
+    font: var(--font);
+    cursor: pointer;
+}
+
+.privacy__button:hover {
+    text-decoration: underline solid var(--highlight);
+}
+
+.post-create__error {
+    align-self: center;
+
+    color: red;
+    font-size: 1.5em;
+}
+
+.create-button {
+    align-self: center;
+    background: none;
+    outline: none;
+
+    width: 10rem;
+
+    color: whitesmoke;
+    font-size: 2em;
+    border: 2px solid var(--highlight);
+    cursor: pointer;
+}
+
+
+.select-users--wrapper {
+    display: flex;
+    align-items: center;
+    min-width: 10rem;
+}
+
+.select-users--wrapper select {
+    appearance: none;
+    /* safari */
+    -webkit-appearance: none;
+    outline: none;
+    /* other styles for aesthetics */
+    width: 100%;
+    font-size: 2em;
+    font: var(--font);
+    padding: 0.675em 6em 0.675em 1em;
+    
+    background-color: var(--background);
+    border: 2px solid var(--highlight);
+
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.select-users__nubmer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: var(--highlight);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .post-img {
+        font-size: 10px;
+    }
+}

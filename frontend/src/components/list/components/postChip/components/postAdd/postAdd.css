@@ -1,0 +1,104 @@
+/* ADD COMMENT */
+
+.post__add-comment {
+    display: flex;
+    justify-content: center;
+
+    width: calc(100%-2rem);
+    margin: 1rem;
+    border: 2px solid #005702;
+
+}
+
+.post__comment__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    gap: 1rem;
+    width: 100%;
+}
+
+.post__comment-input {
+    background: none;
+    border: none;
+    width: 100%;
+    height: auto;
+
+    padding: 0.5rem;
+    padding-right: 6rem;
+    min-height: 2rem;
+
+    color: whitesmoke;
+    font-family: var(--font);
+
+    resize: none;
+}
+
+.post__comment-input:focus {
+    outline: none;
+}
+
+.post__comment-input:focus+.post__comment-input__chars {
+    display: block;
+}
+
+.post__comment-input__chars {
+    position: absolute;
+    display: none;
+
+    top: 0.5rem;
+    right: 0.5rem;
+    color: whitesmoke;
+}
+
+.post__comment-input__chars[data-max='max'] {
+    color: red;
+}
+
+
+.post__comment-options {
+    position: absolute;
+    display: flex;
+
+    gap: 0.4rem;
+    bottom: 0.5rem;
+    right: 2.5rem;
+    margin-right: 0.4rem;
+
+    transition: bottom 0.3s ease-out;
+}
+
+
+.post__comment-submit {
+    position: absolute;
+
+    bottom: 0.5rem;
+    right: 10px;
+
+    transition: bottom 0.3s ease-out;
+}
+
+.post__comment-btn--wrapper {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.post__comment-btn--wrapper:hover {
+    text-decoration: underline solid whitesmoke;
+}
+
+.post__comment-img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+
+.post__comment-submit {
+    background: none;
+    border: none;
+    padding: 0;
+}

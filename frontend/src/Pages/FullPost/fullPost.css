@@ -1,0 +1,27 @@
+.full-post--page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+    color: white;
+}
+
+.post-main.full-post {
+    cursor: default;
+}
+
+
+/* COMMENT SECTION */
+.full-post__comment--wrapper{
+    width: 50%;
+}
+.comments {
+    overflow-y: hidden;
+    align-items: flex-start;
+    gap: 3rem;
+}

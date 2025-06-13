@@ -1,0 +1,72 @@
+.users-list__user {
+    display: inline-block;
+    border: 2px solid;
+    border-color: #005702;
+    width: 25rem;
+    margin-bottom: 2rem;
+}
+
+.users-list__user-header {
+    align-items: center;
+    border-bottom: 2px solid #005702;
+    display: flex;
+    padding: 0.5rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.users-list__user-avatar {
+    height: 4rem;
+    width: 4rem;
+}
+
+.users-list__user-name {
+    color: #00ac03;
+    font-family: "Share Tech Mono";
+    font-size: 1.5rem;
+}
+
+.users-list__user-header:hover {
+    text-decoration: underline #00ac03;
+}
+
+.users-list__user-header:active {
+    text-shadow: 0 0 10px #00ac03;
+}
+
+.users-list__options {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.users-list__button {
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#unsub {
+    color: #ac0000;
+}
+
+#unsub:active {
+    text-shadow: 0px 0px 10px #ac0000;
+}
+
+.users-list__button:hover {
+    text-decoration: underline #00ac03;
+}
+
+.users-list__button:active {
+    text-shadow: 0px 0px 10px white;
+}
+
+[data-choosed="true"] {
+    box-shadow: 0 0 15px var(--highlight);
+}

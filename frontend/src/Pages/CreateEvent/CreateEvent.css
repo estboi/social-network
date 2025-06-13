@@ -1,0 +1,32 @@
+.event-create-main{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+
+.event-inputs{
+    background: none;
+    outline: none;
+    border: 2px solid var(--nested);
+    
+    font-size: 1.5em;
+    font-family: var(--font);
+    color: whitesmoke;
+}
+
+.event-title{
+    height: 5rem;
+}
+
+.event-description{
+    height: 20rem;
+    resize: none;
+}
+
+.events-submit{
+    align-self: center;
+}

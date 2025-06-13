@@ -1,0 +1,63 @@
+.group-bio {
+    font-size: 1em;
+}
+
+.group-bio__name {
+    margin: 0;
+
+    font-size: 2em;
+    color: var(--highlight);
+}
+
+.group-bio__about-title {
+    margin: 0;
+    color: var(--highlight);
+}
+
+.group-bio__about {
+    max-height: 6rem;
+    max-width: 100%;
+
+    text-wrap: wrap;
+    word-break: break-all;
+    overflow-y: auto;
+}
+
+.group-bio__about p {
+    margin: 0;
+}
+
+.group-page {
+    align-self: stretch;
+    position: relative;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.group-page__error {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.change-button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: whitesmoke;
+    font: var(--font);
+    font-size: 2em;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.change-button :hover {
+    border-bottom: 2px solid green;
+}

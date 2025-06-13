@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400&display=swap');
+
+body {
+  margin: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Share Tech Mono';
+  --background: #001400;
+  --highlight: #00ac03;
+  --nested: #005702;
+  --font: 'Share Tech Mono'
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 20vw 80vw;
+  width: 100vw;
+  height: 100%;
+
+  position: relative;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+img {
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #005702;
+}
+
+/* Handle on hover  */
+::-webkit-scrollbar-thumb:hover {
+  background: #008102;
+}
+
+.avatar {
+  width: 5vh;
+  height: 5vh;
+}
+
+.nickname {
+  color: whitesmoke;
+}
+
+
+.error{
+  color: red;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 7px;
+  }
+}

@@ -1,0 +1,35 @@
+@media screen and (min-width: 2561px) {
+
+}
+
+@media screen and (max-width: 2560px) {
+
+}
+@media screen and (max-width: 1920px) {
+    .navbar{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1440px) {
+    .navbar{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .navbar{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar{
+        font-size: 8px;
+    }
+}
+/* MOBILE SCREENS */
+@media screen and (max-width: 768px){
+    .navbar{
+        font-size: 7px;
+    }
+}

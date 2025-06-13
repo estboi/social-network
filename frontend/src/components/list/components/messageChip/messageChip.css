@@ -1,0 +1,52 @@
+.message--user {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 40rem;
+    padding: 1rem;
+    gap: 0.5rem;
+    font-family: var(--font);
+    border: 2px solid var(--nested);
+    align-self: flex-end;
+    /* Align messages from the user to the right */
+}
+
+.message--other {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 40rem;
+    padding: 1rem;
+    gap: 0.5rem;
+    font-family: var(--font);
+    border: 2px solid var(--nested);
+    align-self: flex-start;
+    /* Align messages from others to the left */
+}
+
+.message__header {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+    color: var(--highlight);
+}
+
+.message__avatar {
+    height: 2rem;
+    width: 2rem;
+}
+
+
+.message__time {
+    color: var(--highlight);
+    font-size: 0.7em;
+}
+
+.message__text {
+    color: whitesmoke;
+    max-width: 20rem;
+
+    word-wrap: break-word;
+    text-align: start;
+}

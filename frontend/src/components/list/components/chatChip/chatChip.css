@@ -1,0 +1,68 @@
+.chat-chip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2rem 1fr;
+    grid-template-areas: 'header header time'
+        'main main main'
+    ;
+
+    padding: 1rem;
+    max-height: 7rem;
+    width: 100%;
+
+    border-bottom: 2px solid var(--nested);
+}
+
+.chat-chip__header {
+    grid-area: header;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+
+    font-size: 1.5em;
+    color: whitesmoke;
+
+    cursor: pointer;
+}
+
+.chat-chip__header:hover {
+    text-decoration: underline solid var(--highlight);
+}
+
+.chat-chip__avatar {
+    height: 2rem;
+    width: 2rem;
+}
+
+.chat-chip__header p {
+    margin: 0;
+}
+
+.chat-chip__last-message {
+    grid-area: main;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    max-height: 100%;
+}
+
+.chat-chip__text {
+    max-height: 2rem;
+    width: 70%;
+    margin: 0;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: whitesmoke;
+}
+
+.chat-chip__time {
+    grid-area: time;
+    color: #00ac03;
+    justify-self: center;
+    font-size: 0.8rem;
+
+}

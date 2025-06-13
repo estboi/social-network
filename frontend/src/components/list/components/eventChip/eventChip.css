@@ -1,0 +1,93 @@
+.events-chip {
+    min-height: 10rem;
+    width: 50rem;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+
+    border: 2px solid var(--nested);
+}
+
+.events-chip.attending {
+    box-shadow: 0 0 10px var(--nested);
+}
+.events-chip.notattending{
+    border-color: red;
+    box-shadow: 0 0 10px red;
+}
+.events-chip__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 10rem;
+    gap: 0.5rem;
+}
+
+.events-chip__title {
+    font-size: 1.5rem;
+    width: 100%;
+
+    text-align: center;
+    color: var(--highlight);
+}
+
+.events-chip__description {
+    color: whitesmoke;
+    width: 100%;
+
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.events-chip__date {
+    color: whitesmoke;
+}
+
+.events-chip__group {
+    color: var(--highlight);
+    cursor: pointer;
+}
+
+.events-chip__options {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.events-chip__button {
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.events-chip__button:hover {
+    text-decoration: underline var(--highlight);
+}
+
+.events-chip__button:active {
+    text-shadow: 0px 0px 10px white;
+}
+
+.events-chip__button.not {
+    color: red;
+}
+
+.events-chip__attending {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: var(--highlight);
+    text-shadow: 0 0 10px;
+}
+
+.events-chip__attending.not{
+    color: red;
+    text-shadow: 0 0 10px;
+}

@@ -1,0 +1,40 @@
+.register-page__form--wrapper {
+    border-left: #00ac03 dashed 5px;
+    /* align-self: stretch; */
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.register__input,
+.register__input::placeholder {
+    font-size: 1rem;
+}
+
+.register-page__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    align-self: stretch;
+    padding: 0 2rem;
+    gap: 1rem;
+
+}
+
+.register__button {
+    font-size: 1rem;
+    max-width: 10rem;
+}
+
+.register__title {
+    font-size: 4rem;
+}
+.buttons-div{
+    display: flex;
+    gap: 2rem;
+}

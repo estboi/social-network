@@ -1,0 +1,16 @@
+version: "2"
+
+services:
+  server:
+    build: ./backend
+    container_name: sn-backend
+    ports:
+      - "8080:8080"
+
+  client:
+    build: ./frontend
+    container_name: sn-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - server

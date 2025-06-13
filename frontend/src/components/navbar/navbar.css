@@ -1,0 +1,137 @@
+.navbar {
+    position: relative;
+    height: 100%;
+    max-height: 94vh;
+    min-width: 150px;
+
+    display: grid;
+    grid-template-rows: auto 1fr 7vh;
+    grid-template-areas:
+        "folders"
+        "notification"
+        "profile";
+
+
+    border-right: 2px solid var(--highlight);
+    background-color: var(--background);
+}
+
+.navbar p {
+    margin: 0;
+}
+
+
+/* LINK TO PAGES */
+.navbar__folders-container {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 2vh 1vh;
+}
+
+.navbar__folder-pack {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.navbar__folder {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    gap: 1vh;
+    cursor: pointer;
+}
+
+.folder:hover {
+    text-decoration: underline solid var(--highlight);
+}
+
+.active-page {
+    text-decoration: underline var(--highlight);
+}
+
+.navbar__folder__name {
+    font-size: 2em;
+    color: whitesmoke;
+}
+
+.navbar__folder__img {
+    width: 6vh;
+}
+
+.navbar__subfolder {
+    margin-left: 3vh;
+    display: flex;
+    align-items: center;
+
+    gap: 1vh;
+    cursor: pointer;
+}
+
+.navbar__subfolder__img {
+    width: 2vh;
+}
+
+.navbar__subfolder__name {
+    font-size: 1.5em;
+    color: whitesmoke;
+}
+
+/* PROFILE */
+.navbar__profile-bar {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+
+    gap: 2vh;
+    cursor: pointer;
+    border-top: 2px solid var(--highlight);
+}
+
+.navbar__profile-name {
+    font-size: 2em;
+}
+
+/* NOTIFICATIONS */
+
+.notifications-list {
+    grid-area: notification;
+    
+    overflow-y: auto;
+    width: 100%;
+
+    padding: 1vh;
+    gap: 1rem;
+    border-top: 2px solid var(--highlight);
+}
+
+.new-notification{
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 25px;
+
+    width: 12px;
+    height: 12px;
+
+    background-color: red;
+    border-radius: 50%;
+
+    animation: color 1s infinite;
+}
+
+@keyframes color {
+    0%{
+        background-color: whitesmoke;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: whitesmoke;
+    }
+}

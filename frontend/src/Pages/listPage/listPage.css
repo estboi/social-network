@@ -1,0 +1,16 @@
+.header.list__header {
+    justify-content: center;
+}
+.posts-feed__create-post{
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.posts-feed__create-post:hover {
+    text-decoration: underline #00ac03;
+}

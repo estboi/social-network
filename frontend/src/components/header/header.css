@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    width: 100%;
+    height: 3vw;
+    min-height: 30px;
+
+    border-bottom: 2px solid #00ac03;
+}
+
+/* TITLE */
+.header__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 20vw;
+
+    font-size: 3em;
+
+    color: #00ac03;
+    border-right: 2px solid #00ac03;
+
+    cursor: pointer;
+}
+
+.header__title:hover {
+    text-shadow: 0 0 10px #00ac03;
+}
+
+.header__title p {
+    margin: 0;
+}
+
+.navbar__title:hover {
+    text-shadow: 0 0 15px #00ac03;
+}
+
+/* BACK BUTTON */
+.header__back {
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+
+    color: whitesmoke;
+    font: var(--font);
+    font-size: 2em;
+
+    cursor: pointer;
+}
+
+.header__back:hover {
+    text-decoration: underline solid #00ac03;
+}
+
+.header__back-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
+
+/* HOME PAGE */
+.posts-page__create {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    right: 1vw;
+    width: 15rem;
+
+    cursor: pointer;
+}
+
+.posts-page__create-img {
+    width: 2vw;
+    height: 2vw;
+    min-width: 15px;
+    min-height: 15px;
+}
+
+.posts-page__create-btn {
+    background: none;
+    border: none;
+
+    color: whitesmoke;
+    font-family: 'Share Tech Mono';
+    font-size: 2em;
+
+    cursor: pointer;
+}
+
+.posts-page__create:hover {
+    text-decoration: underline #00ac03;
+}
+
+/* MOBILE */
+.mobile-menu {
+    display: none;
+}

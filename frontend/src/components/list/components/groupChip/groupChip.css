@@ -1,0 +1,83 @@
+.group {
+    min-height: 11rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+
+    border: 2px solid var(--nested);
+}
+
+.group__credentials {
+    align-items: center;
+    align-self: stretch;
+    background-color:  var(--nested);
+    border: 2px solid  var(--nested);
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.group__credentials:hover {
+    text-decoration: underline white;
+}
+
+.group__credentials:active {
+    text-shadow: 0 0 10px white;
+}
+
+.group__avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.group__name {
+    color: white;
+    font-family: "Share Tech Mono";
+    font-size: 1.5em;
+}
+
+.group__description {
+    padding: 0.5rem;
+    text-align: left;
+    color: white;
+    font-family: "Share Tech Mono";
+    font-size: 1em;
+    min-height: 5rem;
+}
+
+.group__options {
+    display: flex;
+    align-items: center;
+    height: 2rem;
+    border-top: 2px solid  var(--nested);
+}
+
+.group__buttons {
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Share Tech Mono';
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+#unconnect {
+    color: #ac0000;
+
+}
+
+#connect:active {
+    text-shadow: 0px 0px 10px #ac0000;
+
+}
+
+.group__buttons:active {
+    text-shadow: 0px 0px 10px white;
+
+}
+
+.group__buttons:hover {
+    text-decoration: underline #00ac03;
+
+}

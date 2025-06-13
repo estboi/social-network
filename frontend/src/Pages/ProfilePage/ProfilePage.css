@@ -1,0 +1,75 @@
+/* OVERALL */
+
+.profile-page {
+    display: flex;
+
+    overflow-y: hidden;
+}
+
+.profile-header {
+    justify-content: flex-start;
+    gap: 10rem;
+}
+
+/* INFOBLOCK */
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    min-width: 20rem;
+    width: 20rem;
+    gap: 2rem;
+
+    color: #fff;
+    border-left: 2px solid var(--highlight);
+    font-size: 1rem;
+}
+
+.infoblock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    gap: 1rem;
+    align-self: stretch;
+    padding: 2rem;
+}
+
+.profile-privacy {
+    margin: 0;
+}
+
+.change-button :hover {
+    text-decoration: underline solid #00ac03;
+}
+
+.profile__about {
+    max-height: 6rem;
+    max-width: 100%;
+    text-wrap: wrap;
+    word-break: break-all;
+    line-height: 1em;
+    overflow-y: auto;
+}
+
+.main-feed {
+    display: flex;
+}
+
+.change-button-profile {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    color: whitesmoke;
+    font: var(--font);
+    font-size: 2em;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    padding: 0;
+}
